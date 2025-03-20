@@ -21,7 +21,7 @@ sector_mapping = {
 @st.cache_data
 def load_data():
     try:
-        data = pd.read_csv(r"C:\Users\bkred\OneDrive\Desktop\project\Countries.csv")
+        data = pd.read_csv(r"Countries.csv")
         return data
     except FileNotFoundError:
         st.error("Data file not found. Please check the file path.")
